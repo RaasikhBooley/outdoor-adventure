@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <!-- start of grid-1 -->
+    <div class="grid-1">
+        <!-- start of navbar -->
+        <nav>
+            <a href="index.html"><button type="home">Home</button></a>
+            <!-- start of dropdown -->
+            <div class="dropdown">
+                <button type="activities">Activities</button>
+                    <div class="dropdown-content">
+                        <a href="#camping">Camping</a>
+                        <a href="#hiking">Hiking</a>
+                        <a href="#canoeing">Canoeing</a>
+                        <a href="#climbing">Climbing</a>
+                        <a href="#fishing">Fishing</a>
+                        <a href="#hunting">Hunting</a>
+                    </div>
+            </div>
+            <!-- end of dropdown -->
+            <a href="gallery.html"><button type="gallery">Gallery</button></a>
+            <a href="contact.html"><button type="contact">Contact</button></a>
+        </nav>
+        <!-- end of navbar -->
+    </div>
+    <!-- end of grid-1 -->
+
+    <!-- start of contact form -->
+    <section class="form">
+        <h2>Contact us</h2>
+    
+        <form class="grid-4">
+                    <section class="name-box">
+                        <!-- Textbox for name, required -->
+                        <input type="text" required placeholder="Name" required minlength="7" maxlength="12">
+                    </section>
+        
+                    <section class="surname-box">
+                        <!-- Text box for name, required -->
+                        <input type="text" required placeholder="Surname" required minlength="7" maxlength="12">
+                    </section>
+            
+                
+                    <section class="email-box">
+                        <!-- Text box for email, required -->
+                        <input type="text" required placeholder="email@example.com" pattern="[@]">
+                    </section>
+    
+                    <section class="activity-box">
+                        <!-- Country drop down menu to choose from, required -->
+                        <select name="Activities" required>
+                            <option value="camping">Camping</option> 
+                            <option value="hiking">Hiking</option>
+                            <option value="canoeing">Canoeing</option>
+                            <option value="climbing">Climbing</option>
+                            <option value="fishing">Fishing</option> 
+                            <option value="hunting">Hunting</option> 
+                        </select>
+                    </section>
+                
+                    <section class="message-box">
+                        <!-- text area for the about box, optional  -->
+                        <textarea name="" id="" placeholder="Leave us a Message" cols="30" rows="10"></textarea>
+                    </section>
+
+                    <section class="submit">
+                        <!-- submit button -->
+                        <input type="Submit" name="" id="">
+                    </section>
+    </section>
+    <!-- end of contact form -->
+
+    <!-- start of grid-3/footer -->
+    <div class="grid-3">
+        <footer>
+            <h5>©2019 Mother Nature</h5>
+        </footer>
+    </div>
+    <!-- end of grid-3/footer -->
+</body>
+</html>

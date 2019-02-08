@@ -1,0 +1,103 @@
+// responsive design
+
+@media (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "nav nav" 
+            "header header"
+            "main main"
+            "footer footer"
+    }
+}
+
+@media (max-width: 700px) {
+    .grid-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "nav"
+            "header"
+    }
+
+    .grid-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+            "main"
+            "main"
+    }
+
+    .grid-2a {
+        display: block;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+            "camping hiking"
+            "canoeing climbing"
+            "fishing hunting"
+    }
+
+    // picture area
+    .picture {
+        position: relative;
+        width: 50%;
+        margin: 0 auto;
+    }
+    // text position and opacity hidden on default
+    .middle {
+        transition: .5s ease;
+        opacity: 1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%)
+    }
+
+        .picture:hover .image {
+            opacity: 0.3;
+        }
+        // show text ".middle" when hovering on picture
+        .picture:hover .middle {
+            opacity: 1;
+        }
+        // text color and size  
+        .text {
+            color: white;
+            font-size: 12px;
+        }
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+                "footer"
+                "footer"
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-gap: 1em;
+            grid-template-columns: repeat(4, 1fr);
+            margin: 0 auto;
+            /* grid-template-rows: repeat(5 1fr); */
+        }
+
+        .grid-4 {
+            display: block;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: 
+                "name-box surname-box"
+                "email-box email-box"
+                "activity-box activity-box"
+                "message-box message-box"
+                "submit submit"
+        }
+    }

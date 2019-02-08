@@ -1,0 +1,343 @@
+// grid layout
+
+// grid-1 which holds the navbar and header area
+.grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "nav"
+        "header"
+}
+// navbar area
+nav {
+    grid-area: nav;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+// header area
+header {
+    grid-area: header;
+    padding: 1em;
+}
+
+// grid-2 which holds the main area on index.html
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "main"
+        "main"
+}
+// main area
+main {
+    grid-area: main;
+    background-color: rgb(25, 25, 25);
+    padding: 1em
+}
+
+// grid-2a wich holds the pictures on index.html
+.grid-2a {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "camping hiking"
+        "canoeing climbing"
+        "fishing hunting"
+}
+.camping {
+    grid-area: camping;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.hiking {
+    grid-area: hiking;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.canoeing {
+    grid-area: canoeing;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.climbing {
+    grid-area: climbing;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.fishing {
+    grid-area: fishing;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.hunting {
+    grid-area: hunting;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+// picture area
+.picture {
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+}
+// text position and opacity hidden on default
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+}
+// opacity ".image" when hovering on picture
+.picture:hover .image {
+    opacity: 0.3;
+}
+// show text ".middle" when hovering on picture
+.picture:hover .middle {
+    opacity: 1;
+}
+// text color and size  
+.text {
+    color: white;
+    font-size: 14px;
+}
+// footer grid
+.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+        "footer"
+        "footer"
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(50, 115, 50);
+    padding: 1em;
+}
+
+.form {
+    text-align: center;
+    background-color: rgb(25, 25, 25);
+    font-family: 'Cinzel', serif;
+}
+
+// GALLERY GRID
+
+.gallery {
+    background-color: rgb(25, 25, 25);
+}
+.gallery-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    /* grid-template-rows: repeat(5 1fr); */
+}
+
+.photo1 {
+    background-image: url(../img/camping1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo2 {
+    background-image: url(../img/camping2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo3 {
+    background-image: url(../img/camping3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo4 {
+    background-image: url(../img/camping4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo5 {
+    background-image: url(../img/camping5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo6 {
+    background-image: url(../img/hiking1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo7 {
+    background-image: url(../img/hiking2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo8 {
+    background-image: url(../img/canoeing1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo9 {
+    background-image: url(../img/canoeing2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo10 {
+    background-image: url(../img/climbing1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo11 {
+    background-image: url(../img/climbing2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo12 {
+    background-image: url(../img/climbing3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo13 {
+    background-image: url(../img/fishing1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo14 {
+    background-image: url(../img/fishing2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+.photo15 {
+    background-image: url(../img/fishing3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 20;
+}
+
+
+.photo16 {
+    background-image: url(../img/hunting2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo17 {
+    background-image: url(../img/hunting3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+.photo18 {
+    background-image: url(../img/hunting4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    grid-column: span 2;
+    grid-row: span 30;
+}
+
+// .photo19 {
+//     background-image: url(../img/hunting5.jpg);
+//     background-size: cover;
+//     background-repeat: no-repeat;
+//     grid-column: span 2;
+//     grid-row: span 30;
+// }
+
+.grid-4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+        "name-box surname-box"
+        "email-box email-box"
+        "activity-box activity-box"
+        "message-box message-box"
+        "submit submit"
+}
+
+.name-box {
+    grid-area: name-box;
+    padding: 1em;
+}
+
+.surname-box {
+    grid-area: surname-box;
+    padding: 1em;
+}
+
+.email-box {
+    grid-area: email-box;
+    padding: 1em;
+}
+
+.activity-box {
+    grid-area: activity-box;
+    padding: 1em;
+}
+
+.message-box {
+    grid-area: message-box;
+    padding: 1em;
+}
+
+.submit {
+    grid-area: submit;
+    padding: 1em;
+}

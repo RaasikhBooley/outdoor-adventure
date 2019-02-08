@@ -1,0 +1,436 @@
+@import url("https://fonts.googleapis.com/css?family=Cinzel");
+@import url("https://fonts.googleapis.com/css?family=Sigmar+One");
+* {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  color: white;
+  scroll-behavior: smooth; }
+
+nav {
+  text-align: center;
+  display: inline-block; }
+
+a {
+  text-decoration: none; }
+
+button {
+  background-color: #191919;
+  padding: 0em 7em;
+  color: white; }
+
+.dropdown {
+  position: relative;
+  display: inline-block; }
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #e1e1e1; }
+
+.dropdown-content a {
+  color: black;
+  padding: 1em 5.46em;
+  text-decoration: none;
+  display: block; }
+
+.dropdown:hover .dropdown-content {
+  display: block; }
+
+header {
+  background-image: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center; }
+
+.logo {
+  width: 50vh;
+  height: 50vh;
+  padding-top: 10vh; }
+
+.title {
+  color: #327332;
+  font-family: 'Sigmar One', cursive; }
+
+h2 {
+  margin: 0; }
+
+p {
+  font-size: 24px; }
+
+.picture {
+  position: relative;
+  width: 50%;
+  margin: 0 auto; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.picture:hover .image {
+  opacity: 0.3; }
+
+.picture:hover .middle {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 12px; }
+
+table {
+  padding: 5em 30em; }
+
+input[type="submit"] {
+  background-color: #327332; }
+
+input[type="text"] {
+  color: black; }
+
+select,
+option,
+textarea {
+  color: black; }
+
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "nav" "header"; }
+
+nav {
+  grid-area: nav;
+  background-color: #327332;
+  padding: 1em; }
+
+header {
+  grid-area: header;
+  padding: 1em; }
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "main" "main"; }
+
+main {
+  grid-area: main;
+  background-color: #191919;
+  padding: 1em; }
+
+.grid-2a {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "camping hiking" "canoeing climbing" "fishing hunting"; }
+
+.camping {
+  grid-area: camping;
+  background-color: #327332;
+  padding: 1em; }
+
+.hiking {
+  grid-area: hiking;
+  background-color: #327332;
+  padding: 1em; }
+
+.canoeing {
+  grid-area: canoeing;
+  background-color: #327332;
+  padding: 1em; }
+
+.climbing {
+  grid-area: climbing;
+  background-color: #327332;
+  padding: 1em; }
+
+.fishing {
+  grid-area: fishing;
+  background-color: #327332;
+  padding: 1em; }
+
+.hunting {
+  grid-area: hunting;
+  background-color: #327332;
+  padding: 1em; }
+
+.picture {
+  position: relative;
+  width: 50%;
+  margin: 0 auto; }
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); }
+
+.picture:hover .image {
+  opacity: 0.3; }
+
+.picture:hover .middle {
+  opacity: 1; }
+
+.text {
+  color: white;
+  font-size: 14px; }
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer" "footer"; }
+
+footer {
+  grid-area: footer;
+  background-color: #327332;
+  padding: 1em; }
+
+.form {
+  text-align: center;
+  background-color: #191919;
+  font-family: 'Cinzel', serif; }
+
+.gallery {
+  background-color: #191919; }
+
+.gallery-grid {
+  display: grid;
+  grid-gap: 1em;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 0 auto;
+  /* grid-template-rows: repeat(5 1fr); */ }
+
+.photo1 {
+  background-image: url(../img/camping1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo2 {
+  background-image: url(../img/camping2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo3 {
+  background-image: url(../img/camping3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo4 {
+  background-image: url(../img/camping4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo5 {
+  background-image: url(../img/camping5.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo6 {
+  background-image: url(../img/hiking1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo7 {
+  background-image: url(../img/hiking2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo8 {
+  background-image: url(../img/canoeing1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo9 {
+  background-image: url(../img/canoeing2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo10 {
+  background-image: url(../img/climbing1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo11 {
+  background-image: url(../img/climbing2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo12 {
+  background-image: url(../img/climbing3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo13 {
+  background-image: url(../img/fishing1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo14 {
+  background-image: url(../img/fishing2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo15 {
+  background-image: url(../img/fishing3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 20; }
+
+.photo16 {
+  background-image: url(../img/hunting2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo17 {
+  background-image: url(../img/hunting3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.photo18 {
+  background-image: url(../img/hunting4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column: span 2;
+  grid-row: span 30; }
+
+.grid-4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "name-box surname-box" "email-box email-box" "activity-box activity-box" "message-box message-box" "submit submit"; }
+
+.name-box {
+  grid-area: name-box;
+  padding: 1em; }
+
+.surname-box {
+  grid-area: surname-box;
+  padding: 1em; }
+
+.email-box {
+  grid-area: email-box;
+  padding: 1em; }
+
+.activity-box {
+  grid-area: activity-box;
+  padding: 1em; }
+
+.message-box {
+  grid-area: message-box;
+  padding: 1em; }
+
+.submit {
+  grid-area: submit;
+  padding: 1em; }
+
+@media (max-width: 1024px) {
+  .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; } }
+@media (max-width: 700px) {
+  .grid-1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "nav" "header"; }
+
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "main" "main"; }
+
+  .grid-2a {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "camping hiking" "canoeing climbing" "fishing hunting"; }
+
+  .picture {
+    position: relative;
+    width: 50%;
+    margin: 0 auto; }
+
+  .middle {
+    transition: .5s ease;
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); }
+
+  .picture:hover .image {
+    opacity: 0.3; }
+
+  .picture:hover .middle {
+    opacity: 1; }
+
+  .text {
+    color: white;
+    font-size: 12px; }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "footer" "footer"; }
+
+  .gallery-grid {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    /* grid-template-rows: repeat(5 1fr); */ }
+
+  .grid-4 {
+    display: block;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "name-box surname-box" "email-box email-box" "activity-box activity-box" "message-box message-box" "submit submit"; } }
+
+/*# sourceMappingURL=main.css.map */
