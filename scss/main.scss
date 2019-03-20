@@ -1,7 +1,8 @@
-@import 'partials/base',
-        'partials/variables',
+@import 'partials/variables',
+        'partials/base',
+        'partials/styles-extend',
         'partials/layout',
-        'partials/components',
-        'partials/mixins',
+        // 'partials/components',
+        // 'partials/mixins',
         'partials/responsive',
         'partials/font';

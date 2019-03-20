@@ -1,14 +1,13 @@
-// base style
+// base styles
 
-// APPLY TO ALL PAGES
+// Apply to all pages
 * {
+    margin: 0;
     text-align: center;
     font-family: 'Cinzel', serif;
     color: white;
     scroll-behavior: smooth;
 }
-
-// NAVBAR STARTS HERE
 // nav styling
 nav {
     text-align: center;
@@ -24,51 +23,6 @@ button {
     padding: 0em 7em;
     color: white;
 }
-
-// dropdown position and inline display
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-// hide dropdown by default, position and dropdown background color
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(225, 225, 225);
-}    
-// styling for dropdown list
-.dropdown-content a {
-    color: black;
-    padding: 1em 5.46em;
-    text-decoration: none;
-    display: block;
-}
-// display dropdown list on hover
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-// NAVBAR ENDS HERE
-
-// INDEX PAGE STARTS HERE
-// background image
-header {
-    background-image: url(../img/background.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    text-align: center;
-}
-// logo size and position
-.logo {
-    width: 50vh;
-    height: 50vh;
-    padding-top: 10vh;  
-}
-// styling for title
-.title {
-    color: rgb(50, 115, 50); 
-    font-family: 'Sigmar One', cursive;
-}
 // centering h2 all tags
 h2 {
     margin: 0;
@@ -76,39 +30,7 @@ h2 {
 // styling for paragraphs
 p {
     font-size: 24px;
-}
-// picture area
-.picture {
-    position: relative;
-    width: 50%;
-    margin: 0 auto;
-}
-// text position and opacity hidden on default
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
-}
-// opacity ".image" when hovering on picture
-.picture:hover .image {
-    opacity: 0.3;
-}
-// show text ".middle" when hovering on picture
-.picture:hover .middle {
-    opacity: 1;
-}
-// text color and size  
-.text {
-    color: white;
-    font-size: 12px;
-}
-// INDEX PAGE ENDS HERE
-
-// CONTACT FORM STARTS HERE 
+} 
 // padding for table
 table {
     padding: 5em 30em;
@@ -120,6 +42,7 @@ input[type="submit"] {
 // input text styling
 input[type="text"] {
     color: black;
+    width: 19em;
 }
 // font color for select, option and textarea
 select, 
@@ -127,12 +50,3 @@ option,
 textarea {
     color: black;
 }
-// CONTACT FORM ENDS HERE
-
-
-
-
-
-
-
-

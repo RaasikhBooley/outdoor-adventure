@@ -1,0 +1,112 @@
+// dropdown position and inline display
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+// hide dropdown by default, position and dropdown background color
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $off-white;
+}    
+// styling for dropdown list
+.dropdown-content a {
+    color: $prim-black;
+    padding: 1em 5.46em;
+    text-decoration: none;
+    display: block;
+}
+// display dropdown list on hover
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+// background image
+.hero {
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+// logo size and position
+.logo {
+    width: 50vh;
+    height: 50vh;
+    padding-top: 10vh;  
+}
+// styling for title
+.title {
+    color: $grass-green; 
+    font-family: 'Sigmar One', cursive;
+}
+// picture area
+.picture {
+    position: relative;
+    width: 50%;
+    height: 72%;
+    margin: 0 auto;
+    border: solid 1em $charcoal;
+}
+// text position and opacity hidden on default
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+// opacity ".image" when hovering on picture
+.picture:hover .image {
+    opacity: 0.3;
+}
+// show text ".middle" when hovering on picture
+.picture:hover .middle {
+    opacity: 1;
+}
+// text color and size  
+.text {
+    color: white;
+    font-size: 12px;
+}
+// background color for gallery page
+.gallery {
+    background-color: $charcoal;
+    width: 100%;
+}
+// background color, text align and font style for contact page
+.form {
+    text-align: center;
+    background-color: $charcoal;
+    font-family: 'Cinzel', serif;
+    width: 100%;
+}
+
+.nav-activities {
+    width: 19.5em;
+}
+
+.fit {
+    margin: 0 auto;
+    width: 77%;
+    padding-bottom: .7em;
+}
+
+.pad-top {
+    padding-top: .7em;
+}
+
+.image {
+    width: 7em;
+    height: 10em;
+}
+
+.resize {
+    padding: 0em;
+}
+
+#center {
+    margin: 0 auto;
+}
