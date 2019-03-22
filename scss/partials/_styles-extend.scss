@@ -43,8 +43,8 @@
 // picture area
 .picture {
     position: relative;
-    width: 50%;
-    height: 72%;
+    width: 80%;
+    height: 80%;
     margin: 0 auto;
     border: solid 1em $charcoal;
 }
@@ -79,9 +79,13 @@
 // background color, text align and font style for contact page
 .form {
     text-align: center;
-    background-color: $charcoal;
+    // background-color: $charcoal;
+    background-image: url("../img/mountain-bg.jpg");
     font-family: 'Cinzel', serif;
     width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .nav-activities {
@@ -90,17 +94,17 @@
 
 .fit {
     margin: 0 auto;
-    width: 77%;
+    width: 90%;
     padding-bottom: .7em;
 }
-
+// add a little bit of padding to the class
 .pad-top {
     padding-top: .7em;
 }
-
+// set the size of the image to all be the same
 .image {
     width: 7em;
-    height: 10em;
+    height: 16em;
 }
 
 .resize {
@@ -109,4 +113,7 @@
 
 #center {
     margin: 0 auto;
+}
+#photo18-size {
+    height: 10vh;
 }

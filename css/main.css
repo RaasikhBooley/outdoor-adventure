@@ -77,8 +77,8 @@ textarea {
 
 .picture {
   position: relative;
-  width: 50%;
-  height: 72%;
+  width: 80%;
+  height: 80%;
   margin: 0 auto;
   border: solid 1em #191919; }
 
@@ -107,16 +107,19 @@ textarea {
 
 .form {
   text-align: center;
-  background-color: #191919;
+  background-image: url("../img/mountain-bg.jpg");
   font-family: 'Cinzel', serif;
-  width: 100%; }
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
 
 .nav-activities {
   width: 19.5em; }
 
 .fit {
   margin: 0 auto;
-  width: 77%;
+  width: 90%;
   padding-bottom: .7em; }
 
 .pad-top {
@@ -124,13 +127,16 @@ textarea {
 
 .image {
   width: 7em;
-  height: 10em; }
+  height: 16em; }
 
 .resize {
   padding: 0em; }
 
 #center {
   margin: 0 auto; }
+
+#photo18-size {
+  height: 10vh; }
 
 .nav-hero-grid {
   display: grid;
@@ -574,5 +580,7 @@ footer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: "name-box surname-box" "email-box email-box" "activity-box activity-box" "message-box message-box" "submit submit"; } }
+.resize-btn {
+  width: 20em; }
 
 /*# sourceMappingURL=main.css.map */
