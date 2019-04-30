@@ -63,7 +63,6 @@ textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
-  width: 100%;
   text-align: center; }
 
 .logo {
@@ -88,8 +87,7 @@ textarea {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%); }
 
 .picture:hover .image {
   opacity: 0.3; }
@@ -138,7 +136,11 @@ textarea {
 #photo18-size {
   height: 10vh; }
 
+.black {
+  color: black; }
+
 .nav-hero-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -147,15 +149,14 @@ textarea {
 nav {
   grid-area: nav;
   background-color: #327332;
-  padding: 1em;
-  width: 100%; }
+  padding: 1em; }
 
 .hero {
   grid-area: hero;
-  padding: 1em;
-  width: 100%; }
+  padding: 1em; }
 
 .activities-grid {
+  width: 100%;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
@@ -164,7 +165,6 @@ nav {
 main {
   grid-area: main;
   background-color: #191919;
-  width: 100%;
   padding: 1em; }
 
 .activities-nested-grid {
@@ -205,6 +205,7 @@ main {
 
 .footer-grid {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-template-areas: "footer" "footer"; }
@@ -212,7 +213,6 @@ main {
 footer {
   grid-area: footer;
   background-color: #327332;
-  width: 100%;
   padding: 1em; }
 
 .gallery-grid {
@@ -410,21 +410,16 @@ footer {
 
   .picture {
     position: relative;
-    width: 50%;
     margin: 0 auto; }
 
   .middle {
     transition: .5s ease;
     opacity: 1;
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     width: 100%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%); }
-
-  .picture:hover .image {
-    opacity: 0.3; }
+    transform: translate(-50%, -50%); }
 
   .picture:hover .middle {
     opacity: 1; }

@@ -26,7 +26,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: 100%;
+    // width: 100%;
     text-align: center;
 }
 // logo size and position
@@ -56,9 +56,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
 }
-// opacity ".image" when hovering on picture
+// opacity on background ".image" when hovering on picture
 .picture:hover .image {
     opacity: 0.3;
 }
@@ -116,4 +115,8 @@
 }
 #photo18-size {
     height: 10vh;
+}
+
+.black {
+    color: black;
 }

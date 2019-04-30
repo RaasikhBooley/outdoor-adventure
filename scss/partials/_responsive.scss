@@ -53,7 +53,7 @@
     // picture area
     .picture {
         position: relative;
-        width: 50%;
+        // width: 50%;
         margin: 0 auto;
     }
     // text position and opacity hidden on default
@@ -61,18 +61,12 @@
         transition: .5s ease;
         opacity: 1;
         position: absolute;
-        top: 50%;
+        top: 70%;
         left: 50%;
         width: 100%;
         transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-     
     }
   
-    // opacity ".image" when hovering on picture
-    .picture:hover .image {
-        opacity: 0.3;
-    }
     // show text ".middle" when hovering on picture
     .picture:hover .middle {
         opacity: 1;
