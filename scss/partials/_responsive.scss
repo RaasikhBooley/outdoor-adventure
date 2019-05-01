@@ -12,6 +12,10 @@
             "main main"
             "footer footer"
     }
+
+    .resize-btn {
+        width: 20em;
+    }
 }
 
 @media (max-width: 700px) {
@@ -33,47 +37,144 @@
             "main"
     }
 
+    .dropdown-content a {
+        color: $prim-black;
+        padding: 1em 5.65em;
+        text-decoration: none;
+        display: block;
+    }
+    
+    i { 
+        padding-top: 10vh;
+        font-size: 2em;
+    }
+
     p {
-        font-size: 13px;
+        font-size: 0.8em;
     } 
 
+    article {
+        padding-top: 1.5em;
+        font-size: 0.7em;
+    }
+
+    .hero {
+        background-image: url(../img/background.jpg);
+        height: 70vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    .logo {
+        width: 30vh;
+        height: 30vh;
+        padding-top: 5vh;  
+    }
+
+    .image {
+        width: 7em;
+        height: 14em;
+    }
+
+    .resize {
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+        padding: 0em;
+    }
+
     .activities-nested-grid {
-        display: block;
+        display: grid;
+        grid-gap: 1em;
+        padding: 1em;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-template-areas: 
-            "camping"
-            "hiking"
-            "canoeing"
-            "climbing"
-            "fishing"
-            "hunting"
+            "camp-art"
+            "camp-picture"
+            "hike-art"
+            "hike-picture"
+            "canoe-art"
+            "canoe-picture"
+            "climb-art"
+            "climb-picture"
+            "fish-art"
+            "fish-picture" 
+            "hunt-art"
+            "hunt-picture";
+    }
+    
+    .camp-picture {
+        grid-area: camp-picture;
+        background-color: $off-white;
+        padding: 1em;
     }
 
-    // picture area
-    .picture {
-        position: relative;
-        // width: 50%;
-        margin: 0 auto;
+    .camp-art {
+        padding-top: 1em;
+        grid-area: camp-art;
+        background-color: $grass-green;
     }
-    // text position and opacity hidden on default
-    .middle {
-        transition: .5s ease;
-        opacity: 1;
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        width: 100%;
-        transform: translate(-50%, -50%);
+
+    .hike-picture {
+        grid-area: hike-picture;
+        background-color: $off-white;
+        padding: 1em;
     }
-  
-    // show text ".middle" when hovering on picture
-    .picture:hover .middle {
-        opacity: 1;
+
+    .hike-art {
+        padding-top: 1em;
+        grid-area: hike-art;
+        background-color: $grass-green;
     }
-    // text color and size  
-    .text {
-        color: white;
+
+    .canoe-picture {
+        grid-area: canoe-picture;
+        background-color: $off-white;
+        padding: 1em;
+    }
+
+    .canoe-art {
+        padding-top: 1em;
+        grid-area: canoe-art;
+        background-color: $grass-green;
+    }
+
+    .climb-picture {
+        grid-area: climb-picture;
+        background-color: $off-white;
+        padding: 1em;
+    }
+
+    .climb-art {
+        padding-top: 1em;
+        grid-area: climb-art;
+        background-color: $grass-green;
+    }
+
+    .fish-picture {
+        grid-area: fish-picture;
+        background-color: $off-white;
+        padding: 1em;
+    }
+
+    .fish-art {
+        padding-top: 1em;
+        grid-area: fish-art;
+        background-color: $grass-green;
+    }
+
+    .hunt-picture {
+        grid-area: hunt-picture;
+        background-color: $off-white;
+        padding: 1em;
+    }
+
+    .hunt-art {
+        padding-top: 1em;
+        grid-area: hunt-art;
+        background-color: $grass-green;
     }
 
     .footer-grid {
@@ -86,159 +187,178 @@
     }
 
     .gallery-grid {
-        display: grid;
+        display: block;
         grid-gap: 1em;
-        grid-template-columns: 1fr;
         margin: 0 auto;
-        /* grid-template-rows: repeat(5 1fr); */
+        grid-template-columns: 1fr;
+        
     }
     #center {
         margin: 0 auto;
         width: 16em;
     }
     .photo1 {
+        height: 40vh;
         background-image: url(../img/camping1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo2 {
+        height: 35vh;
         background-image: url(../img/camping2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo3 {
+        height: 32vh;
         background-image: url(../img/camping3.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo4 {
-        background-image: url(../img/camping4.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
-    }
-    
-    .photo5 {
-        background-image: url(../img/camping5.jpg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
-    }
-    
-    .photo6 {
+        height: 34vh;
         background-image: url(../img/hiking1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
-    .photo7 {
+    .photo5 {
+        height: 40vh;
         background-image: url(../img/hiking2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
-    .photo8 {
+    .photo6 {
+        height: 40vh;
+        background-image: url(../img/hiking3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        // grid-column: span 2;
+        // grid-row: span 30;
+    }
+    
+    .photo7 {
+        height: 40vh;
         background-image: url(../img/canoeing1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
-    .photo9 {
+    .photo8 {
+        height: 35vh;
         background-image: url(../img/canoeing2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 30;
+    }
+    
+    .photo9 {
+        height: 40vh;
+        background-image: url(../img/canoeing3.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
     .photo10 {
+        height: 30vh;
         background-image: url(../img/climbing1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
     .photo11 {
+        height: 45vh;
         background-image: url(../img/climbing2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo12 {
+        height: 35vh;
         background-image: url(../img/climbing3.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
     .photo13 {
+        height: 35vh;
         background-image: url(../img/fishing1.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo14 {
+        height: 25vh;
         background-image: url(../img/fishing2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
     .photo15 {
+        height: 30vh;
         background-image: url(../img/fishing3.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 20;
+        // grid-column: span 2;
+        // grid-row: span 20;
     }
     
     
     .photo16 {
+        height: 40vh;
         background-image: url(../img/hunting2.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo17 {
+        height: 45vh;
         background-image: url(../img/hunting3.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
     
     .photo18 {
+        height: 40vh;
+        grid-area: photo18;
         background-image: url(../img/hunting4.jpg);
         background-size: contain;
         background-repeat: no-repeat;
-        grid-column: span 2;
-        grid-row: span 30;
+        // grid-column: span 2;
+        // grid-row: span 30;
     }
 
     .form-grid {
@@ -252,7 +372,23 @@
             "message-box message-box"
             "submit submit"
     }
+
+    .form {
+        text-align: center;
+        background-image: url("../img/mountain-bg.jpg");
+        font-family: 'Cinzel', serif;
+        width: 100%;
+        height: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .resize-btn {
+        width: 20em;
+    }
+
 }
-.resize-btn {
-    width: 20em;
-}
+
+
+

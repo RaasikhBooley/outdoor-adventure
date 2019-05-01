@@ -19,6 +19,11 @@ button {
   padding: 0em 7em;
   color: white; }
 
+article {
+  margin: 0 auto;
+  padding-top: 8vh;
+  width: 70%; }
+
 h2 {
   margin: 0; }
 
@@ -27,6 +32,10 @@ p {
 
 table {
   padding: 5em 30em; }
+
+i {
+  padding-top: 12.5vh;
+  font-size: 3em; }
 
 input[type="submit"] {
   background-color: #327332; }
@@ -51,7 +60,7 @@ textarea {
 
 .dropdown-content a {
   color: black;
-  padding: 1em 5.46em;
+  padding: 1em 5.65em;
   text-decoration: none;
   display: block; }
 
@@ -60,44 +69,24 @@ textarea {
 
 .hero {
   background-image: url(../img/background.jpg);
+  height: 90vh;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+  background-position: center;
   text-align: center; }
 
 .logo {
   width: 50vh;
   height: 50vh;
-  padding-top: 10vh; }
+  padding-top: 4vh; }
 
 .title {
   color: #327332;
   font-family: 'Sigmar One', cursive; }
 
-.picture {
-  position: relative;
-  width: 80%;
-  height: 80%;
-  margin: 0 auto;
-  border: solid 1em #191919; }
-
-.middle {
-  transition: .5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); }
-
-.picture:hover .image {
-  opacity: 0.3; }
-
-.picture:hover .middle {
-  opacity: 1; }
-
-.text {
-  color: white;
-  font-size: 12px; }
+.sub-title {
+  color: whitesmoke;
+  font-family: 'Sigmar One', cursive; }
 
 .gallery {
   background-color: #191919;
@@ -108,6 +97,7 @@ textarea {
   background-image: url("../img/mountain-bg.jpg");
   font-family: 'Cinzel', serif;
   width: 100%;
+  height: 90vh;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover; }
@@ -128,6 +118,7 @@ textarea {
   height: 16em; }
 
 .resize {
+  margin-top: 3em;
   padding: 0em; }
 
 #center {
@@ -152,8 +143,7 @@ nav {
   padding: 1em; }
 
 .hero {
-  grid-area: hero;
-  padding: 1em; }
+  grid-area: hero; }
 
 .activities-grid {
   width: 100%;
@@ -169,39 +159,71 @@ main {
 
 .activities-nested-grid {
   display: grid;
+  grid-gap: 1em;
+  padding: 1em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  grid-template-areas: "camping hiking" "canoeing climbing" "fishing hunting"; }
+  grid-template-areas: "camp-picture camp-art" "hike-art hike-picture" "canoe-picture canoe-art" "climb-art climb-picture" "fish-picture fish-art" "hunt-art hunt-picture"; }
 
-.camping {
-  grid-area: camping;
-  background-color: #327332;
+.camp-picture {
+  grid-area: camp-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
 
-.hiking {
-  grid-area: hiking;
-  background-color: #327332;
+.camp-art {
+  padding-top: 1em;
+  grid-area: camp-art;
+  background-color: #327332; }
+
+.hike-picture {
+  grid-area: hike-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
 
-.canoeing {
-  grid-area: canoeing;
-  background-color: #327332;
+.hike-art {
+  padding-top: 1em;
+  grid-area: hike-art;
+  background-color: #327332; }
+
+.canoe-picture {
+  grid-area: canoe-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
 
-.climbing {
-  grid-area: climbing;
-  background-color: #327332;
+.canoe-art {
+  padding-top: 1em;
+  grid-area: canoe-art;
+  background-color: #327332; }
+
+.climb-picture {
+  grid-area: climb-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
 
-.fishing {
-  grid-area: fishing;
-  background-color: #327332;
+.climb-art {
+  padding-top: 1em;
+  grid-area: climb-art;
+  background-color: #327332; }
+
+.fish-picture {
+  grid-area: fish-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
 
-.hunting {
-  grid-area: hunting;
-  background-color: #327332;
+.fish-art {
+  padding-top: 1em;
+  grid-area: fish-art;
+  background-color: #327332; }
+
+.hunt-picture {
+  grid-area: hunt-picture;
+  background-color: #e1e1e1;
   padding: 1em; }
+
+.hunt-art {
+  padding-top: 1em;
+  grid-area: hunt-art;
+  background-color: #327332; }
 
 .footer-grid {
   display: grid;
@@ -216,140 +238,158 @@ footer {
   padding: 1em; }
 
 .gallery-grid {
-  padding-top: 1em;
+  padding: 1em;
   display: grid;
-  width: 100%;
   grid-gap: 1em;
-  grid-template-columns: repeat(4, 1fr);
-  margin: 0 auto; }
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  grid-template-areas: "photo1 photo2 photo3" "photo4 photo5 photo6" "photo7 photo8 photo9" "photo10 photo11 photo12" "photo13 photo14 photo15" "photo16 photo17 photo18"; }
 
 .photo1 {
+  grid-area: photo1;
+  height: 40vh;
   background-image: url(../img/camping1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo2 {
+  grid-area: photo2;
+  height: 40vh;
   background-image: url(../img/camping2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo3 {
+  grid-area: photo3;
+  height: 40vh;
   background-image: url(../img/camping3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo4 {
-  background-image: url(../img/camping4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
-
-.photo5 {
-  background-image: url(../img/camping5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
-
-.photo6 {
+  grid-area: photo4;
+  height: 40vh;
   background-image: url(../img/hiking1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
-.photo7 {
+.photo5 {
+  grid-area: photo5;
+  height: 40vh;
   background-image: url(../img/hiking2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
 
-.photo8 {
+.photo6 {
+  grid-area: photo6;
+  height: 40vh;
+  background-image: url(../img/hiking3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.photo7 {
+  grid-area: photo7;
+  height: 40vh;
   background-image: url(../img/canoeing1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
-.photo9 {
+.photo8 {
+  grid-area: photo8;
+  height: 40vh;
   background-image: url(../img/canoeing2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
+
+.photo9 {
+  grid-area: photo9;
+  height: 40vh;
+  background-image: url(../img/canoeing3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .photo10 {
+  grid-area: photo10;
+  height: 40vh;
   background-image: url(../img/climbing1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
 
 .photo11 {
+  grid-area: photo11;
+  height: 40vh;
   background-image: url(../img/climbing2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo12 {
+  grid-area: photo12;
+  height: 40vh;
   background-image: url(../img/climbing3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
 
 .photo13 {
+  grid-area: photo13;
+  height: 40vh;
   background-image: url(../img/fishing1.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo14 {
+  grid-area: photo14;
+  height: 40vh;
   background-image: url(../img/fishing2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
 
 .photo15 {
+  grid-area: photo15;
+  height: 40vh;
   background-image: url(../img/fishing3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 20; }
+  background-position: center; }
 
 .photo16 {
+  grid-area: photo16;
+  height: 40vh;
   background-image: url(../img/hunting2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo17 {
+  grid-area: photo17;
+  height: 40vh;
   background-image: url(../img/hunting3.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-position: center; }
 
 .photo18 {
+  grid-area: photo18;
+  height: 40vh;
   background-image: url(../img/hunting4.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
-  grid-column: span 2;
-  grid-row: span 30; }
+  background-repeat: no-repeat; }
 
 .form-grid {
+  padding-top: 1em;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -385,7 +425,10 @@ footer {
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; } }
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
+
+  .resize-btn {
+    width: 20em; } }
 @media (max-width: 700px) {
   .nav-hero-grid {
     display: grid;
@@ -399,33 +442,112 @@ footer {
     grid-template-rows: 1fr;
     grid-template-areas: "main" "main"; }
 
+  .dropdown-content a {
+    color: black;
+    padding: 1em 5.65em;
+    text-decoration: none;
+    display: block; }
+
+  i {
+    padding-top: 10vh;
+    font-size: 2em; }
+
   p {
-    font-size: 13px; }
+    font-size: 0.8em; }
+
+  article {
+    padding-top: 1.5em;
+    font-size: 0.7em; }
+
+  .hero {
+    background-image: url(../img/background.jpg);
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center; }
+
+  .logo {
+    width: 30vh;
+    height: 30vh;
+    padding-top: 5vh; }
+
+  .image {
+    width: 7em;
+    height: 14em; }
+
+  .resize {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    padding: 0em; }
 
   .activities-nested-grid {
-    display: block;
+    display: grid;
+    grid-gap: 1em;
+    padding: 1em;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "camping" "hiking" "canoeing" "climbing" "fishing" "hunting"; }
+    grid-template-areas: "camp-art" "camp-picture" "hike-art" "hike-picture" "canoe-art" "canoe-picture" "climb-art" "climb-picture" "fish-art" "fish-picture" "hunt-art" "hunt-picture"; }
 
-  .picture {
-    position: relative;
-    margin: 0 auto; }
+  .camp-picture {
+    grid-area: camp-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
 
-  .middle {
-    transition: .5s ease;
-    opacity: 1;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    width: 100%;
-    transform: translate(-50%, -50%); }
+  .camp-art {
+    padding-top: 1em;
+    grid-area: camp-art;
+    background-color: #327332; }
 
-  .picture:hover .middle {
-    opacity: 1; }
+  .hike-picture {
+    grid-area: hike-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
 
-  .text {
-    color: white; }
+  .hike-art {
+    padding-top: 1em;
+    grid-area: hike-art;
+    background-color: #327332; }
+
+  .canoe-picture {
+    grid-area: canoe-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
+
+  .canoe-art {
+    padding-top: 1em;
+    grid-area: canoe-art;
+    background-color: #327332; }
+
+  .climb-picture {
+    grid-area: climb-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
+
+  .climb-art {
+    padding-top: 1em;
+    grid-area: climb-art;
+    background-color: #327332; }
+
+  .fish-picture {
+    grid-area: fish-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
+
+  .fish-art {
+    padding-top: 1em;
+    grid-area: fish-art;
+    background-color: #327332; }
+
+  .hunt-picture {
+    grid-area: hunt-picture;
+    background-color: #e1e1e1;
+    padding: 1em; }
+
+  .hunt-art {
+    padding-top: 1em;
+    grid-area: hunt-art;
+    background-color: #327332; }
 
   .footer-grid {
     display: grid;
@@ -434,148 +556,141 @@ footer {
     grid-template-areas: "footer" "footer"; }
 
   .gallery-grid {
-    display: grid;
+    display: block;
     grid-gap: 1em;
-    grid-template-columns: 1fr;
     margin: 0 auto;
-    /* grid-template-rows: repeat(5 1fr); */ }
+    grid-template-columns: 1fr; }
 
   #center {
     margin: 0 auto;
     width: 16em; }
 
   .photo1 {
+    height: 40vh;
     background-image: url(../img/camping1.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo2 {
+    height: 35vh;
     background-image: url(../img/camping2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo3 {
+    height: 32vh;
     background-image: url(../img/camping3.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo4 {
-    background-image: url(../img/camping4.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
-
-  .photo5 {
-    background-image: url(../img/camping5.jpg);
-    background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
-
-  .photo6 {
+    height: 34vh;
     background-image: url(../img/hiking1.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
-  .photo7 {
+  .photo5 {
+    height: 40vh;
     background-image: url(../img/hiking2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
 
-  .photo8 {
+  .photo6 {
+    height: 40vh;
+    background-image: url(../img/hiking3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; }
+
+  .photo7 {
+    height: 40vh;
     background-image: url(../img/canoeing1.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
-  .photo9 {
+  .photo8 {
+    height: 35vh;
     background-image: url(../img/canoeing2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
+
+  .photo9 {
+    height: 40vh;
+    background-image: url(../img/canoeing3.jpg);
+    background-size: contain;
+    background-repeat: no-repeat; }
 
   .photo10 {
+    height: 30vh;
     background-image: url(../img/climbing1.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
 
   .photo11 {
+    height: 45vh;
     background-image: url(../img/climbing2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo12 {
+    height: 35vh;
     background-image: url(../img/climbing3.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
 
   .photo13 {
+    height: 35vh;
     background-image: url(../img/fishing1.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo14 {
+    height: 25vh;
     background-image: url(../img/fishing2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
 
   .photo15 {
+    height: 30vh;
     background-image: url(../img/fishing3.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 20; }
+    background-repeat: no-repeat; }
 
   .photo16 {
+    height: 40vh;
     background-image: url(../img/hunting2.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo17 {
+    height: 45vh;
     background-image: url(../img/hunting3.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .photo18 {
+    height: 40vh;
+    grid-area: photo18;
     background-image: url(../img/hunting4.jpg);
     background-size: contain;
-    background-repeat: no-repeat;
-    grid-column: span 2;
-    grid-row: span 30; }
+    background-repeat: no-repeat; }
 
   .form-grid {
     display: block;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-template-areas: "name-box surname-box" "email-box email-box" "activity-box activity-box" "message-box message-box" "submit submit"; } }
-.resize-btn {
-  width: 20em; }
+    grid-template-areas: "name-box surname-box" "email-box email-box" "activity-box activity-box" "message-box message-box" "submit submit"; }
+
+  .form {
+    text-align: center;
+    background-image: url("../img/mountain-bg.jpg");
+    font-family: 'Cinzel', serif;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; }
+
+  .resize-btn {
+    width: 20em; } }
 
 /*# sourceMappingURL=main.css.map */

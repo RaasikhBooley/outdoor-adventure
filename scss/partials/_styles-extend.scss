@@ -12,7 +12,7 @@
 // styling for dropdown list
 .dropdown-content a {
     color: $prim-black;
-    padding: 1em 5.46em;
+    padding: 1em 5.65em;
     text-decoration: none;
     display: block;
 }
@@ -23,52 +23,27 @@
 // background image
 .hero {
     background-image: url(../img/background.jpg);
+    height: 90vh;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
-    // width: 100%;
+    background-position: center;
     text-align: center;
 }
 // logo size and position
 .logo {
     width: 50vh;
     height: 50vh;
-    padding-top: 10vh;  
+    padding-top: 4vh;  
 }
 // styling for title
 .title {
     color: $grass-green; 
     font-family: 'Sigmar One', cursive;
 }
-// picture area
-.picture {
-    position: relative;
-    width: 80%;
-    height: 80%;
-    margin: 0 auto;
-    border: solid 1em $charcoal;
-}
-// text position and opacity hidden on default
-.middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-// opacity on background ".image" when hovering on picture
-.picture:hover .image {
-    opacity: 0.3;
-}
-// show text ".middle" when hovering on picture
-.picture:hover .middle {
-    opacity: 1;
-}
-// text color and size  
-.text {
-    color: white;
-    font-size: 12px;
+
+.sub-title {
+    color: whitesmoke; 
+    font-family: 'Sigmar One', cursive;
 }
 // background color for gallery page
 .gallery {
@@ -78,10 +53,10 @@
 // background color, text align and font style for contact page
 .form {
     text-align: center;
-    // background-color: $charcoal;
     background-image: url("../img/mountain-bg.jpg");
     font-family: 'Cinzel', serif;
     width: 100%;
+    height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -107,6 +82,7 @@
 }
 
 .resize {
+    margin-top: 3em;
     padding: 0em;
 }
 

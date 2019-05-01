@@ -24,6 +24,11 @@ button {
     padding: 0em 7em;
     color: white;
 }
+article {
+    margin: 0 auto;
+    padding-top: 8vh;
+    width: 70%;
+}
 // centering h2 all tags
 h2 {
     margin: 0;
@@ -35,6 +40,11 @@ p {
 // padding for table
 table {
     padding: 5em 30em;
+}
+// icon styling
+i { 
+    padding-top: 12.5vh;
+    font-size: 3em;
 }
 // input submit styling
 input[type="submit"] {
